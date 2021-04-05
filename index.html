@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sound">
+        <img src="sound on.png" alt="sound on" id="icon">
+    </div>
+    <audio src="cwm.mp3" id="song"></audio>
+    <script>
+        var song = document.getElementById("song")
+        var icon = document.getElementById("icon")
+
+        icon.onclick = function() {
+            if(song.paused){
+                song.play();
+                icon.src = "sound on.png";
+            }else {
+                song.pause();
+                icon.src = "sound_off.png"
+            }
+        }
+    </script>
+    <div class="container">
+        <h1>Crossword</h1> <a href='game.html' id="bn" >Play</a>
+    </div>
+</body>
+</html>

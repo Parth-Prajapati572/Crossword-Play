@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Nova Square', cursive;
+    position: relative;
+    background-image: url('new.jpg');
+    overflow-y: hidden;
+    
+    
+}
+
+
+#icon {
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  float: right;
+  margin-right: 15px;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.container {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   
+   align-items: center;
+   
+}
+
+#bn
+    { 
+        margin-left: 10px;
+      font-weight: bolder;
+      background-color: lightsteelblue;
+      text-decoration: none;
+      color: black;
+      border-style:solid;
+      border-width: 1px;
+      border-radius: 12px;
+      border-color: black;
+      padding: 15px;
+      font-family: 'Nova Square', cursive;
+      font-size: 50px;
+    }
+    #bn:hover
+    {
+      border-color: black;
+      background-color: rgb(27, 182, 27);
+      color:black;
+      font-family: 'Nova Square', cursive;
+    }
+  
+    h1{
+        text-align: center;
+        font-family: 'Nova Square', cursive;
+        font-size: 60px;
+        color: white;
+    }

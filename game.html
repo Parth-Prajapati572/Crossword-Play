@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Crossword</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <!-- White box 
+<input onkeydown="keyCode(event)" class="buttons001" type="text" id="names100" maxlength="1"/>
+    -->
+    <!-- black box
+<input onkeydown="keyCode(event)" class="button" disabled="disabled" value=""/>
+    -->
+    <div class="sound">
+        <img src="sound on.png" alt="sound on" id="icon">
+    </div>
+    <audio src="cwm.mp3" id="song"></audio>
+    <script>
+        var song = document.getElementById("song")
+        var icon = document.getElementById("icon")
+
+        icon.onclick = function() {
+            if(song.paused){
+                song.play();
+                icon.src = "sound on.png";
+            }else {
+                song.pause();
+                icon.src = "sound_off.png"
+            }
+        }
+    </script>
+    <div>
+    <h1>Linux Administrative Task</h1><a href='index.html' class="btn" style="color: white; border: none; font-size: 25px;"><i class="fas fa-arrow-circle-left"></i>  Back</a>
+</div>
+    <div class="end">
+        <div id="next001"></div>
+        <p id="score001">Number of correct letters: 0 out of 85</p>
+    </div>
+
+    <div class="container" >
+    <section class="crossw">
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="0"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="1"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="2"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="3"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="4"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="5"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="6"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="7"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="8"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="9"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="10"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="11"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="12"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="13"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="14"/><input onkeydown="keyCode(event)" class="button" disabled="disabled" value="15"/><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names001" maxlength="1" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names002" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names003" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names004" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names005" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names006" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names007" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names008" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names009" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names012" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br />
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="2"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names016" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names017" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names018" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names019" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names020" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names026" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names027" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br />
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="3"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names031" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names032" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names033" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names034" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names035" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names036" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names037" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names041" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names042" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names045" maxlength="1"/><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="4"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names046" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names049" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names056" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names057" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names058" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names060" maxlength="1"/><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="5"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names062" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names064" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names071" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names072" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names073" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names075" maxlength="1"/><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="6"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names077" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names079" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names080" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names081" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names082" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names083" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names085" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names086" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names087" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names088" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names089" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names090" maxlength="1"/><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="7"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names091" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names092" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names094" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names098" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names103" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names105" maxlength="1"/><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="8"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names107" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names111" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names113" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names114" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names118" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="9"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names122" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names126" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names128" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names129" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names130" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names133" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="10"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names137" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names141" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names143" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names144" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names148" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="11"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names152" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names155" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names156" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names157" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names158" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names159" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names163" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="12"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names167" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names171" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names172" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names174" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br>
+        <input onkeydown="keyCode(event)" class="button" disabled="disabled" value="13"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons001" type="text" id="names182" maxlength="1"/><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><input onkeydown="keyCode(event)" class="buttons002" disabled="disabled" /><br>
+    </section>
+
+    <section class="question">
+        
+        <table>
+        <tr>
+            <th style="font-size: 20px;">Across</th>
+            <th style="font-size: 20px;">Down</th>    
+        </tr>
+        <tr>
+            <td>(1,1) What is the default maximum number of process in Linux? </td>
+            <td>(1,1) The types of owner in Linux file system are Other, Group and ____ </td>
+            
+        </tr>
+        <tr>
+            <td>(1,2) For threads belonging to same process, which resource is not shared among these threads?</td>
+            <td>(2,5) ____ mounts, is when a file system can be mounted over another file system, that is remotely mounted, not local. </td>
+            
+        </tr>
+        <tr>
+            <td>(1,3) Which permission, when applied to a directory in the file system, will allow a user to enter the directory? </td>
+            <td>(4,3) Which command is used to change permissions of a file?</td>
+            
+        </tr>
+        <tr>
+            <td>(1,7) Which of the following Linux utilities does NOT include the capability to list the process IDs of running applications?</td>
+            <td>(6,12) Which element handles SOAP exceptions?</td>
+            
+        </tr>
+        <tr>
+            <td>(4,6) Representation of permission of rwxr-r in which experssion 744?</td>
+            <td>(8,6) chmod u + x command is typed to assign executable permission to the owner of the file named ____</td>
+            
+        </tr>
+        <tr>
+            <td>(6,12) Which of the following command use to background process to foreground? </td>
+            <td>(9,8) The ____ mechanism doesnot exhibit a transitive property.</td>
+            
+        </tr>
+        <tr>
+            <td>(8,11) chmod ugo = r test command is typed to assign which permission to all three categories of the file 'test'?</td>
+            <td>(11,2) A user needs to open a file, edit it, and then save the changes. Read and ____ permission he needs to do this.</td>
+            
+        </tr>
+        <tr>
+            <td>(8,9) Which command is used to list all the running processes on the Linux machine?</td>
+            <td>(12,1) The server maintains an ________ that specifies local file systems that it exports for mounting, along with names of machines that are permitted to mount them. </td>
+            
+        </tr>
+        <tr>
+            <td>(15,6) The mount request is mapped to the corresponding _____ and is forwarded to the mount server running on the specific server machine. </td>
+            <td>(13,4) What time is the interval between the time of submission of a process and the time it is allotted CPU for First time? </td>
+            
+        </tr>
+        <tr>
+            <td></td>
+            <td>(15,7) The full set of mount options used by an invocation of mount is determined by first extracting the mount options for the filesystem from the ____</td>
+        </tr>
+
+        
+    </table>
+    
+
+</section>
+</div>
+<br><br>
+   
+    <script src="crossword.js"></script>
+
+</body>
+</html>
